@@ -36,3 +36,5 @@ export interface RuleGroup {
   not: boolean
   type: 'rule_group'
 }
+
+##### We can check the API output on the console.
