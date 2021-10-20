@@ -91,6 +91,12 @@ const QueryBuilder: React.FC<QueryBuilderProps> = ({setOpenQueryBuilder}) => {
                 </div>
                 
                 <FilterBox queryArray = {queryArray} setQueryArray = {setQueryArray} conjunction = {conjunction}  setConjunction = {setConjunction}/>
+                <div className ="flex flex-row content-center bg-secondary rounded-md text-sm w-44 p-0.5 ml-7 cursor-pointer">
+                    <div className ="p-1 ml-1 mt-px">
+                        <span className ="material-icons-outlined text-xs">add</span>
+                    </div>
+                    <p className ="pt-1 pr-0.5">Add new group filter</p>
+                </div>
                 <div className = "flex justify-between mt-20 mr-2 mb-2">
                     <button onClick = {closeHandler} className = "bg-gray-seventh p-2 ml-3 w-20 rounded-md">Back</button>
                     <button onClick = {submitHandler} className = "bg-secondary p-2 w-20 rounded-md">Finish</button>
